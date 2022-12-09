@@ -4,13 +4,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getMessage } from '../../redux/reducers/Users/selectors';
 import { showHelloWorld } from '../../redux/reducers/Users/reducer';
 import { styles } from './styles';
+import { THomePropsDetails } from './types';
 
-type THomeProps = {
-	someProps?: string;
-	navigation?: any;
-};
-
-const Home: FC<THomeProps> = ({ navigation }) => {
+const Home: FC<THomePropsDetails> = ({ navigation }) => {
 	const dispatch = useDispatch();
 	const message = useSelector(getMessage);
 

@@ -1,14 +1,14 @@
 import { FC } from 'react';
 import { Button, Text, View } from 'react-native';
+import { TAboutPropsDetails } from './types';
 
-type TAboutProps = {
-	navigation: any;
-};
-
-const About: FC<TAboutProps> = ({ navigation }) => {
+const About: FC<TAboutPropsDetails> = ({ route, navigation }) => {
 	return (
 		<View>
-			<Button onPress={() => navigation.navigate('Feed')} title="Go to Feed" />
+			<Button
+				onPress={() => navigation.navigate('Feed', { someParam: 'some param string' })}
+				title="Go to Feed"
+			/>
 			<Text>About Page</Text>
 		</View>
 	);
