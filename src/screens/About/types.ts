@@ -1,4 +1,4 @@
-import { TAboutProps } from './../../navigation/types';
+import { TAboutProps } from '../../navigation/types';
 export type TAboutPropsDetails = {
     route: TAboutProps['route'],
     navigation: TAboutProps['navigation'],

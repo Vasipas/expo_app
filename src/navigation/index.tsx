@@ -15,6 +15,7 @@ const Navigation = () => {
 					component={Home}
 					options={({ route }) => ({
 						headerTitle: getHeaderTitle(route),
+						headerTitleAlign: 'center'
 					})}
 				/>
 				<Tabs.Screen
@@ -22,6 +23,9 @@ const Navigation = () => {
 					component={AboutStack}
 					options={({ route }) => ({
 						headerTitle: getHeaderTitle(route),
+						headerTitleAlign: 'center',
+						headerBackButtonMenuEnabled: false,
+						headerShown: false
 					})}
 				/>
 			</Tabs.Navigator>

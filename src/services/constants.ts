@@ -1,1 +1,1 @@
-export const WEB_API_URL = 'http://www.google.com/'
+export const WEB_API_URL = 'https://filmix.ac/'

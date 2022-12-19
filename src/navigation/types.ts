@@ -4,7 +4,7 @@ import { BottomTabNavigationProp } from "@react-navigation/bottom-tabs";
 export type RootStackParamList = {
     Home: undefined;
     Feed: { someParam: string } | undefined;
-    About: undefined;
+    About: {stringParam: string} | undefined;
 };
 
 export type TFeedProps = NativeStackScreenProps<RootStackParamList, 'Feed'>;
